@@ -462,72 +462,7 @@ class encypthion_class:
                                     elif size_data3[0:1]=="1":
                                         size_data3=size_data3[1:]                                    
                                     
-                                    import getpass
-
-                                    password=getpass.getpass()
-                                    
-                                    
-                                    
-                                    string = password
-
-                                    lower="abcdefghijklmopqrstuvwxyz"
-
-                                    upper="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-
-                                    res=""
-
-                                    for i in range(0,len(string)):
-
-                                        if(i%2==0):
-
-                                            if(string[i] in lower):
-
-                                                res+="1"*(lower.index(string[i])+1)
-
-                                            else:
-
-                                                res+="1"*(upper.index(string[i])+1)
-
-                                        else:
-
-                                            if(string[i] in lower):
-
-                                               res+="0"*(lower.index(string[i])+1)
-
-                                            else:
-
-                                               res+="0"*(upper.index(string[i])+1)
-
-                                    password=res
-                                    
-                                    
-                                       
-                                    
-                                    long=len(password)
-                                    long_eight=long
-                                    long_N=str(long)
-                                    long_count="0"+long_N+"b"
-                                
-                                    N=int(password,2)
-                                    N=format(N,long_count)
-
-                                    password=N
-                                    password1=size_data3[:long_eight] 
-                                    
-                                    if  password==password1:
-                                        size_data3=size_data3[long_eight:]
-                                        
-                                        long_file=len(size_data3)
-                                        divide=long_file%8
-                                        if divide==0:
-                                            print("Password it's right!")
-                                        else:
-                                            print("Password it's incorrect!")
-                                            raise SystemExit
-                                            
-                                    else:
-                                        print("Password it's incorrect!")
-                                        raise SystemExit
+                                   
                                         
                                       
                                     n = int(size_data3, 2)
