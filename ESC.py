@@ -249,7 +249,7 @@ class encypthion_class:
                                     
                                 size_data11=size_data12 
                                   
-                                size_data11=size_data11
+                               
              
                                                                                 
                                 n = int(size_data11, 2)
